@@ -5,3 +5,12 @@ if (media >= 8){
 }else{
     console.log("Reprovado");
 }
+
+var semaforo;
+if (semaforo == "verde"){
+    console.log("Siga");
+}else if(semaforo == "amarelo"){
+    console.log("Atenção!");
+}else{
+    console.log("Pare!");
+}
