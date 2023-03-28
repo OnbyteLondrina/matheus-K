@@ -29,3 +29,6 @@ if (string === numero){
 }else{
     console.log("As variáveis não são iguais");
 }
+
+var media2 = 8;
+media2 >= 8 ? console.log("Aprovado") : console.log("Reprovado");
