@@ -21,3 +21,11 @@ if (dia == "Sabado" || dia == "Domingo"){
 }else{
     console.log("Dia Útil");
 }
+
+var string = "";
+var numero = 0;
+if (string == numero){
+    console.log("As variáveis são iguais");
+}else{
+    console.log("As variáveis não são iguais");
+}
