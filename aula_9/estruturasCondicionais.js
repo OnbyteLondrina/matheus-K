@@ -14,3 +14,10 @@ if (semaforo == "verde"){
 }else{
     console.log("Pare!");
 }
+
+var Dia;
+if (dia == "Sabado" || dia == "Domingo"){
+    console.log("Final de semana");
+}else{
+    console.log("Dia Útil");
+}
