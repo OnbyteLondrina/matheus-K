@@ -24,7 +24,7 @@ if (dia == "Sabado" || dia == "Domingo"){
 
 var string = "";
 var numero = 0;
-if (string == numero){
+if (string === numero){
     console.log("As variáveis são iguais");
 }else{
     console.log("As variáveis não são iguais");
