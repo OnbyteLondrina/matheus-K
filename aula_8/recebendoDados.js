@@ -9,3 +9,5 @@ function subtrair(numero1,numero2){
 }
 resultado = subtrair(8,4);
 console.log(resultado);
+
+console.log(subtrair(6,3));
