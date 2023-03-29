@@ -30,3 +30,8 @@ while (k < 10){
     console.log(k);
     k++;
 }
+
+var valor = 6;
+for (i = 1; i <11; i++){
+    console.log(valor + "x" + i + " = " + (valor * i));
+}
