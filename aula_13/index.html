@@ -9,12 +9,15 @@
 <body>
     <h1>Aqui temos um parágrafo</h1>
     <p>Aqui temos o segundo parágrafo</p>
-    <div>Minha div</div>
+    <div id = "minhaDiv">Minha div</div>
     <br>
 
     <script>
         var p1 = document.getElementsByTagName('p')[0];
         document.write(p1.innerText);
+
+        var d = document.getElementById("minhaDiv");
+        d.innerText = "Modificando a Div";
     </script>
 </body>
 </html>
