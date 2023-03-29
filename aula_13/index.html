@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Aqui temos um parágrafo</h1>
-    <p>Aqui temos o segundo parágrafo</p>
+    <p name = "parágrafo">Aqui temos o segundo parágrafo</p>
+    <p name = "parágrafo">Aqui temos o terceiro parágrafo</p>
     <div id = "minhaDiv">Minha div</div>
     <br>
 
@@ -18,6 +19,8 @@
 
         var d = document.getElementById("minhaDiv");
         d.innerText = "Modificando a Div";
+        var p = document.getElementsByName("parágrafo")[1];
+        p.style.background = "blue";
     </script>
 </body>
 </html>
