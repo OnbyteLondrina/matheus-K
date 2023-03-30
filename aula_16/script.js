@@ -14,3 +14,9 @@ function apagar(){
         RESULTADO.innerHTML = remove.substring(0, remove.length - 1);
     }
 }
+
+function confirmar(){
+    if (RESULTADO.textContent != 'Erro'){
+        document.getElementById('resultado').innerHTML = eval(RESULTADO.innerHTML);
+    }
+}
