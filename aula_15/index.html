@@ -16,9 +16,13 @@
     </style>
 </head>
 <body>
-    <div id="area">Interações JS</div>
+    <div id="area" onclick="clicar()">Interações JS</div>
     <script>
         var a = document.getElementById('area');
+        function clicar(){
+            a.innerText = "clicou";
+            a.style.background = "aqua";
+        }
     </script>
 </body>
 </html>
