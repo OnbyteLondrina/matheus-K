@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()">Interações JS</div>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interações JS</div>
     <script>
         var a = document.getElementById('area');
         function clicar(){
@@ -25,6 +25,11 @@
         }
         function entrar(){
             a.innerText = "entrou";
+        }
+        function sair(){
+            a.innerText = "saiu";
+            a.style.background = "black";
+            a.style.color = "yellow";
         }
     </script>
 </body>
