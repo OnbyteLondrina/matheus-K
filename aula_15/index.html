@@ -16,12 +16,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">Interações JS</div>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">Interações JS</div>
     <script>
         var a = document.getElementById('area');
         function clicar(){
             a.innerText = "clicou";
             a.style.background = "aqua";
+        }
+        function entrar(){
+            a.innerText = "entrou";
         }
     </script>
 </body>
