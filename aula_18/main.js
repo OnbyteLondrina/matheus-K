@@ -5,7 +5,7 @@ function enviar(){
     console.log(endEmail);
     console.log(senha);
 
-    var lemb = document.querySelector('#checkbox');
+    var lemb = document.querySelector('#checkbox').value;
     if (lemb.checked){
         console.log("Checkbox selecionada");
     }
