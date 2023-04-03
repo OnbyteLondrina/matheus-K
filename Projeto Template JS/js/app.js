@@ -7,5 +7,11 @@ function navbRolagem(){
         document.getElementById("logo").style.fontSize = "16px";
         document.getElementById("logo").innerText = "JS - HOME";
         document.getElementById("logo").style.color = "yellow";
+    }else{
+        document.getElementById("navbar").style.top = "-5";
+        document.getElementById("navbar").style.background = "transparent";
+        document.getElementById("logo").style.fontSize = "22px";
+        document.getElementById("logo").innerText = "JS";
+        document.getElementById("logo").style.color = "white";
     }
 }
