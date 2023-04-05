@@ -35,5 +35,12 @@ const intervalo = 7000;
 valorCont.forEach((valor) => {
     let valorInicial = 0;
     let valorFinal = parseInt(valor.getAttribute("data-counter"));
-    console.log(valorFinal);
+    duracao = Math.floor(intervalo/valorFinal);
+    let contador = setInterval(() => {
+        valorInicial += 1;
+        valor.textContent = valorInicial;
+        if(valorInicial == valorFinal){
+            clearInterval(contador);
+        }
+    }, duracao);
 })
