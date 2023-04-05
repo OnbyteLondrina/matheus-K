@@ -28,3 +28,12 @@ function efeitoEscrever(elemento){
 
 const titulo = document.getElementById('textH');
 onload = efeitoEscrever(titulo);
+
+const valorCont = document.querySelectorAll('.counter');
+const intervalo = 7000;
+
+valorCont.forEach((valor) => {
+    let valorInicial = 0;
+    let valorFinal = parseInt(valor.getAttribute("data-counter"));
+    console.log(valorFinal);
+})
