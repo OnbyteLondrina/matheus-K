@@ -33,16 +33,18 @@ const valorCont = document.querySelectorAll('.counter');
 const intervalo = 7000;
 
 const cont = document.querySelectorAll('[data-counter]');
+var executou = false;
 
 function contadorAnimado(){
     const topPagina = window.pageYOffset + ((window.innerHeight * 3) / 4);
 
     cont.forEach((elemCont) => {
-        if(topPagina > (elemCont.offsetTop - 100)){
+        if(topPagina > (elemCont.offsetTop - 100) && executou == false){
             valorCont.forEach((valor) => {
                 let valorInicial = 0;
                 let valorFinal = parseInt(valor.getAttribute("data-counter"));
-                duracao = Math.floor(intervalo/valorFinal);
+                let duracao = Math.floor(intervalo/valorFinal);
+                executou = true;
                 let contador = setInterval(() => {
                     valorInicial += 1;
                     valor.textContent = valorInicial;
