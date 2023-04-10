@@ -62,3 +62,19 @@ window.addEventListener('scroll', function(){
 })
 
 $('.parallax-window').parallax({imageSrc:'imagens/img_home.png'});
+
+$(function (){
+    $('.list').click(function (){
+        const filtro = $(this).attr('data-filter');
+        if (filtro == 'all'){
+            $('.itemBox').show();
+        }else{
+            $('.itemBox').not('.' + filtro).hide('1000');
+            $('.itemBox').show();
+        }
+    });
+
+    $('.list').click(function (){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+});
