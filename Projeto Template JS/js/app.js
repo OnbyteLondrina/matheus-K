@@ -60,3 +60,5 @@ function contadorAnimado(){
 window.addEventListener('scroll', function(){
     contadorAnimado();
 })
+
+$('.parallax-window').parallax({imageSrc:'imagens/img_home.png'});
