@@ -99,3 +99,15 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function(){
     modal.style.display = "none";
 }
+
+function redirecionarReplace(){
+    window.location.href = "http://www.google.com";
+}
+
+function redirecionarLoad(){
+    document.getElementById("loading").style.display = "block";
+
+    setTimeout(
+        function (){window.location.href = "http://www.google.com";
+    }, 5000)
+}
