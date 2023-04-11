@@ -78,3 +78,24 @@ $(function (){
         $(this).addClass('active').siblings().removeClass('active');
     });
 });
+
+var modal = document.getElementById("worksModal");
+var img = document.querySelectorAll(".worksImg");
+var modalImg = document.getElementById("modal");
+var legenda = document.getElementById("caption");
+var srcImg = "";
+
+for(let i = 0; i < img.length; i++){
+    img[i].addEventListener('click', function(){
+        modal.style.display = "block";
+        srcImg = img[i].getAttribute('src');
+        modalImg.setAttribute('src', srcImg);
+        legenda.innerHTML = this.alt;
+    })
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function(){
+    modal.style.display = "none";
+}
