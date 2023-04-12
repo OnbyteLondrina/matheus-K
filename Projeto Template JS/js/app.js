@@ -111,3 +111,26 @@ function redirecionarLoad(){
         function (){window.location.href = "http://www.google.com";
     }, 5000)
 }
+
+var slideIndex = 1;
+mostrarSlides(slideIndex);
+
+function correrSlide(n){
+    mostrarSlides(slideIndex = n);
+}
+
+function mostrarSlides(n){
+    let slides = document.getElementsByClassName("carrouselArea");
+    let carrousel = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < carrousel.length; i++){
+        carrousel[i].className = carrousel[i].className.replace("active", "");
+    }
+
+    slides[n-1].style.display = "block";
+    carrousel[n-1].className += " active";
+}
