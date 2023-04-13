@@ -52,7 +52,7 @@
   }
 
   .navbar-custom .navbar-light li a:hover {
-    color: #f5e61a;
+    color: #fcfbf7;
   }
 
    
@@ -146,7 +146,7 @@
   .counter {
     animation-duration: 1s;
     animation-delay: 0s;
-    color: #f5e61a;
+    color: #000000;
   }
   
   .padding-60{
@@ -155,7 +155,7 @@
   }
 
   .result{
-    background: rgb(7, 119, 189);
+    background: rgb(255, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
   }
@@ -288,12 +288,12 @@ section ul li{
 }
 
 section ul li.active{
-  background: rgb(234, 236, 108);
+  background: rgb(255, 0, 0);
 }
 
 section ul li:hover {
-  background: rgb(234, 236, 108);
-  color: rgb(138, 136, 136);
+  background: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   border: 0px;
 }
 
@@ -376,13 +376,13 @@ section ul li:hover {
   =================================*/
 
   #contacts{
-    background-color: yellow;  
+    background-color: rgb(255, 0, 0);  
   }
 
   .text-contact{
     text-align: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: yellow;
+    background: rgb(0, 0, 0);
   }
 
   .submitBnt {
@@ -393,6 +393,6 @@ section ul li:hover {
 
   .footer .copy-rights {
     margin: 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     padding: 30px 40px;
   }
